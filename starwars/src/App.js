@@ -42,7 +42,7 @@ function App() {
       {
         data.map((character) => {
           return <div>
-              <Character url={character.image} key={character.id}/>
+              <Character url={character.image} key={character.id} name={character.name}/>
               <Names>{character.name}</Names>
               <Origins>{character.origin.name}</Origins>
             </div>

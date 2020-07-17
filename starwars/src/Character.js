@@ -19,12 +19,12 @@ justify-content: center;
 margin-top: 3rem;`
 
 function Character(props){
-    const {url} = props
+    const {url, name} = props
 
     return (
         <CenteringDiv>
             <ImgContainer>
-                <img src={url} alt= "photo of character named below from Rick and Morty"/>
+                <img src={url} alt={"Image of character named " + name + " on the show Rick and Morty"}/>
             </ImgContainer>
         </CenteringDiv>
     )
